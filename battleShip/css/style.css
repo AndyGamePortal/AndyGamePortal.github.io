@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: aquamarine;
+}
+
+.container:after {
+    width: 100%;
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.header {
+    width: 100%;
+    min-height: 700px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: cadetblue;
+    font-size: 42px;
+    margin-bottom:50px;
+}
+.boat{
+    width: 25%;
+    float: left;
+    margin-left: -300px;
+}
+.batl{
+    width: 50%;
+    margin: 150px 300px;    
+}
+.game {
+    display: block;
+    float: left;
+    width: 100px;
+    min-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin: 0 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 800;
+    color: #BDB76B;
+    background-color: #E6E6FA;
+}
+
+.game:hover {
+    color: #8FBC8F;
+    background-color: #E0FFFF;
+}
+
+.game:active {
+    color: #E6E6FA;
+    background-color: #BDB76B;
+}
