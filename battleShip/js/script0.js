@@ -41,9 +41,15 @@ if (communication == 'да') {
     // alert(location1 + '' + location2 + '' + location3); //проверка
     do {
         shotlocation = prompt('Корабль занимает 3 квадрата в секторе от 0 до 6.\nВыберите сектор поражения - цифру от 0 до 6!');
+        (shotlocation < 0 || shotlocation > 6) ? alert('Выбран неверный диапазон значений'): shots += 1;
         (shotlocation == location1 || shotlocation == location2 || shotlocation == location3) ? hits += 1: hits = hits;
         //alert(hits);
-        shots += 1;
+        if (shotlocation == location1 || shotlocation == location2 || shotlocation == location3) {
+            alert('Ура!!! Попал!!!');
+        }
+        else {
+            alert('Блин!!! Промах!!!');
+        }
         switch (hits) {
         case 0:
             enemy = 'Здоров!';
